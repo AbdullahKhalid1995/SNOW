@@ -1,0 +1,388 @@
+/***********بسم الله الرحمن الرحيم **********/
+
+* , *:after , *:befor{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat' , sans-serif;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.container{
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+.header {
+    height: 690px;
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header .header-head{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-head ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.header .header-head ul li{
+    padding: 10px;
+}
+.header .header-head ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.header .header-head ul li a:hover{
+    color: aqua;
+}
+.header .header-content{
+    width: 50%;
+    text-align: center;
+    margin: 12% auto;
+    align-self: center;
+}
+.header .header-content h2{
+    color: #fff;
+    font-size: 40px;
+}
+.header .header-content p{
+    font-size: 17px;
+    color:darkgrey ;
+    margin-bottom: 25px;
+}
+.header .header-content button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header .header-content .more{
+    background-color: #fff;
+    margin-right: 15px;cursor: pointer; 
+}
+
+.header .header-content .more:hover{
+    background-color: #70C8D0;
+    color: #fff;
+}
+.header .header-content .invite{
+    background-color: #70C8D0;
+    color: #fff;
+}
+
+.header .header-content .invite:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.header .header-content .header-mouse{
+    width: 32px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #eee;
+    margin: 10% 10% 10% 45%;
+    position: relative;
+}
+.header .header-content .header-mouse:hover{
+    background-color: #70C8D0
+}
+.header .header-content .header-mouse .scroll{
+    width: 5px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    position: relative;
+    top: 10%;
+    left: 43%;
+    animation: animate 1.5s ease-in-out infinite;
+}
+@keyframes animate{
+    
+    0%{
+        opacity: 0;
+        top:3px;
+    }
+    50%{
+        opacity: 1;
+        top:10px;
+    }100%{
+        opacity: 0;
+        top:30px
+    }
+    
+}
+
+
+
+/****************************************
+               first
+*****************************************/
+
+.first{
+    height: 550px;
+    background-image: url(../images/be-the-first-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    padding-top: 7%;
+    
+
+}
+.first .container h2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.first .container p{
+    font-size: 25px;
+    margin: 15px 0;
+    color:azure ;
+}
+
+.first .container img{
+    width: 500px;
+    
+}
+
+/****************************************
+                   Feature
+*****************************************/
+.feature  .container {
+    height: auto;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row; /* default value */
+    justify-content: space-between;
+    
+}
+.feature .container .feature-app{
+    width: 31%;
+    border-top: 3px solid ;
+}
+.feature .container .blue{
+    border-color: darkviolet;
+}
+.feature .container .sky{
+    border-color:darkcyan;
+}
+.feature .container .gold{
+    border-color:darkorange;
+}
+.feature .container .feature-app p{
+    color: #888;
+}
+
+/****************************************
+                 pricing
+*****************************************/
+.pricing {
+    height: auto;
+    text-align: center;
+    background-color: #70c8d0;
+    padding: 2% 0;
+
+}
+.pricing h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: aliceblue;
+}
+.pricing p{
+    font-size: 17px;
+    color:antiquewhite;
+    margin: 0;
+
+}
+
+
+/****************************************
+                 boxes
+*****************************************/
+.boxes .container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    background-color: #70c8d0;
+    padding: 5% 0; 
+    height: 450px;
+}
+
+.boxes .container .started ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.boxes .container .started ul:hover{
+    margin-top: -10px;
+}
+.boxes .container .started ul li{
+    padding: 10px;
+}
+.boxes .container .started ul li:first-child {
+    color:#fff;
+    font-size: 12px;
+    background-color:#231f20;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.boxes .container .started ul li h2{
+    margin: 0;
+}
+.boxes .container .started ul li:nth-child(2) {
+    color:#fff;
+    font-size: 27px;
+    font-weight: bold;
+    background-color:#231f20;
+}
+.boxes .container .started ul li:nth-child(2):hover{
+    background-color: #333;
+}
+.boxes .container .started ul li:nth-child(3) {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    color:#888;
+}
+.boxes .container .started ul li:nth-child(n+4) {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px dotted #E8EAEA;
+}
+.boxes .container .middle ul li:nth-child(n+4) {
+    padding: 15px
+}
+.boxes .container .started ul li:last-child {
+    color:#fff;
+    font-size: 27px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.boxes .container .started ul li:last-child:hover{
+    background-color: #f5f5f5;
+}
+.boxes .container .started ul li a{
+    text-decoration: none;
+    color: #70c8d0;
+}
+
+.boxes .container .started:nth-last-of-type(1),
+.boxes .container .started:nth-last-of-type(3){
+    margin-top: 2%
+}
+
+/****************************************
+                 invite
+*****************************************/
+.invite{
+    height: auto;
+    margin:auto;
+    padding-top: 10%;
+    text-align: center;
+    background-color: #F3F2F3;
+}
+.invite i{
+    width: 40px;
+    border: 3px solid ;
+    border-radius: 50%;
+    padding: 10px;
+    color: #70cbce;
+}
+.invite i:hover{
+    background-color: #70cbce;
+    color: aliceblue;
+    border: 3px solid #fff;
+}
+.invite h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.invite p{
+    font-size: 15px;
+    color: darkgray;
+    margin: 20px; 
+}
+.invite input{
+    display: block;
+    width: 30%;
+    padding: 13px 7px;
+    margin: auto;
+    border: none;
+}
+.invite button{
+    padding: 12px;
+    border: none;
+    background-color:#70C8D0; 
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 27%;
+}
+.invite button:hover{
+    background-color: #fff; 
+    color: #70C8D0;
+    cursor: pointer;
+}
+/****************************************
+                 forbes
+*****************************************/
+.forbes{
+    width: 55%;
+    margin: auto;
+    padding: 8% 0;
+}
+.forbes .tc{
+    display: flex;
+    margin: 5% 0;
+}
+.forbes .tc p{
+    color:dimgrey;
+}
+.forbes .tc p i{
+    margin-top: 15px;
+    font-weight: bold;
+    color: #888;
+    line-height: 20px;
+}
+/****************************************
+                 footer
+*****************************************/
+.footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #888;
+    
+}
+.footer .container .connect a{
+    color: #333;
+}
+.footer .container span span{
+    color:#70C8D0;
+    font-weight: bold;
+}
+/******************والحمدلله*********************/
